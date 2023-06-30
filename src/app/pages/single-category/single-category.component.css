@@ -1,0 +1,16 @@
+.general{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.btn{
+    background-color: var(--primary-color);
+    height: 40px;
+    width: 150px;
+    color: white;
+    border: none;
+    font-size: 13px;
+}
+.button{
+    text-align: center;
+    margin-top: -45px;
+}

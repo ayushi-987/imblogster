@@ -1,0 +1,22 @@
+.home{
+    margin-top: 105px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.featuredd{
+    height: 670px;
+    background-color: var(--primary-color);
+}
+.heading{
+    padding-top: 2px;
+    font-size: 20px;
+}
+.subheading{
+    font-size: smaller;
+}
+.latest-post{
+    margin-top: 50px;
+}
+.latestheading{
+    color: var(--primary-color);
+}

@@ -1,0 +1,27 @@
+.about-us{
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 5px;
+}
+.con{
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+p{
+    text-align: left;
+    color: var(--primary-color);
+}
+.heading{
+    color: rgba(255, 255, 255, 0.895);
+    font-size: 30px;
+    font-weight: 500;
+}
+.about-body{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+.btn{
+    background-color: var(--primary-color);
+    color: rgba(255, 255, 255, 0.895); 
+}

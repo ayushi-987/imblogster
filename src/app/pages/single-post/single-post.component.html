@@ -1,0 +1,27 @@
+<div class="post container">
+    <div>
+        <div class="image">
+            <img src="{{postsArray.postImgPath}}" alt="post-image"/>
+        </div>
+        <div class="card-body mt-5">
+            <div class="partitions row">
+            <div class=" col-md-8">
+            <small class="bg-light text-danger text-center"> {{postsArray.category.category}}</small>
+            <small class="bg-light text-success text-center ms-3" *ngIf="postsArray.isFeatured"> Features</small>
+            <small class="bg-light text-primary text-center ms-3"> Views-{{postsArray.views}}</small>
+            <small class="bg-light text-warning text-center ms-3">LAST UPDATED - {{postsArray.createdAt.toMillis()| date}}</small>
+            <h1 class="mt-2 fw-medium heading">{{postsArray.title}}</h1>
+            <div class="paragraphs pb-5 ">{{postsArray.excerpt}}</div>
+            <p [innerHtml]="postsArray.content"></p>
+<div >
+    <app-comment-form></app-comment-form>
+    <app-comment-list></app-comment-list>
+</div>
+</div>
+<div class="col-md-4 row ">
+  <div class="pb-5" *ngFor="let similar of similarArray"><app-post-card [postData]="similar"></app-post-card></div>
+</div>
+</div>
+        </div>
+    </div>
+</div>

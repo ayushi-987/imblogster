@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-body">
+    <div class="text-center mt-3 ">
+        <h1 class="fw-medium">SUBSCRIPTION FORM</h1>
+        <p class="m-auto subs-text mb-4">"Stay informed and inspired with the latest updates from my blog app. Subscribe today and unlock a world of valuable insights, expert advice, and captivating content at your fingertips."</p>
+        <form action="" class="row form-inline mb-5" #subForm=ngForm (ngSubmit)='onSubmit(subForm.value)'>
+           <div class="form-group col-md-5">
+            <input  type="text" class="form-control" placeholder="Your Name" name="name" ngModel required #Name="ngModel"
+            [ngClass]="{'is-valid': Name.touched && Name.invalid}"/>
+            <div class="text-danger" *ngIf="Name.touched && Name.invalid"> <div *ngIf="Name.errors?.required">Name is required Field</div></div>
+           </div>
+           <div class="form-group col-md-5">
+            <input class="form-control" placeholder="Your Email" type="email" name="email" ngModel required email #Email="ngModel"
+            [ngClass]="{'is-valid': Name.touched && Name.invalid}"/>
+            <div class="alert alert-danger" *ngIf="Email.touched && Email.invalid">
+                <div *ngIf="Email.errors?.required">Email cannot be empty</div>
+                <div *ngIf="Email.errors?.email">Type valid email address</div>
+            </div>
+           </div>
+           <div class="col-md-2">
+                <button class="btn btn-info btn-sub btn-block" [disabled]='subForm.invalid'> SUBSCRIBE</button>
+           </div>
+          </form>
+    </div>
+</div>
+</div>

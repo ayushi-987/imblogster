@@ -1,0 +1,14 @@
+img{
+    height: 500px;
+    width: 1110px;
+}
+.image{
+    text-align: center;
+}
+.heading{
+    color: var(--primary-color);
+    max-width: 600px;
+}
+.paragraphs{
+    max-width: 670px;
+}

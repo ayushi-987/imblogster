@@ -1,0 +1,16 @@
+<div class="general">
+    <div class="container p-5">
+        <h1>{{categoryObj.category}}</h1>
+        <p>"Expand your horizons and deepen your understanding with our thought-provoking blogs."</p>
+    </div>
+</div>
+<section>
+    <div class="container pb-5 px-5">
+        <div class="row">
+            <div class="col-md-4 mb-3 mt-5" *ngFor="let post of postsArray"><app-post-card [postData]="post"></app-post-card></div>
+        </div>
+    </div>
+    <!-- <div class="button">
+        <button class="btn btn-info btn-sub btn-block"> LOAD MORE</button>
+   </div> -->
+</section>
